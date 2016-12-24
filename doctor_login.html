@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html >
+  
+<head>
+    
+<meta charset="UTF-8">
+    
+<title>Login Form</title>
+    
+    
+    
+<link rel="stylesheet" href="css/reset.css">
+
+    
+     
+ <link rel="stylesheet" href="css/style1.css">
+
+    
+    
+    
+  
+<script type='text/javascript'>
+
+function check()
+{
+if(document.login.docid.value!="12345")
+{
+alert("Enter correct doctor ID");
+return false;
+}
+if(document.login.docpwd.value!="12345")
+{
+alert("Enter correct password");
+return false;
+}
+ return true;   
+}
+</script>
+<style type="text/css">
+a {
+background: deepskyblue ;
+color: white;
+font-color:blue;
+border: 1px solid #eee;
+border-radius: 5px;
+box-shadow: 2px 2px 2px #eee;
+padding: 10px 100px;
+}
+a:hover {
+background: white;
+color: deepskyblue;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+}
+</style>
+</head>
+
+  
+<body>
+
+ 
+<br><br>
+<br><div class="pen-title">
+ 
+<div class="module form-module">
+  
+<div class="toggle">
+<i class="fa fa-times fa-pencil"></i>
+ 
+
+<!--<div class="tooltip">
+</div>-->
+  
+
+</div>
+
+<div class="form">
+    
+<h1><font color="deepskyblue">Doctor</font></h1>
+    
+<form name="login" method="post"> 
+<input type="text" name="docid" placeholder="ID"/>
+      
+<input type="password" name="docpwd" placeholder="Password"/>
+ <br><br> </form>
+
+<a href="doctor_patient.html" style="text-decoration:none" onclick="return check()">Login
+
+  </a></form>
+  
+</div>
+  
+
+  
+    
+    
+  
+</body>
+
+</html>
